@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+    <!-- All values listed here are in meters or radians -->
+    <!-- Scanse does not supply 3D meshes on their website,
+         so the meshes and textures are loose approximations -->
+
+    <model name="workbench">
+        <static>1</static>
+        <!-- Give the base link a unique name -->
+        <link name="base">
+            <!-- Make sure it sits on ground plane -->
+            <pose>0 0 0 0 0 0</pose>
+	    
+            
+            <inertial>
+                <!-- Assume most of the mass is in the base. This is not
+                     actually true, but gives a good enough approximation
+                     and preserves the desired kinematics -->
+                <mass>200</mass>
+                <inertia>
+                    <ixx>20</ixx>
+                    <iyy>20</iyy>
+                    <izz>20</izz>
+                    <ixy>20</ixy>
+                    <ixz>20</ixz>
+                    <iyz>20</iyz>
+                </inertia>
+            </inertial>
+
+            <collision name="workbench_collision">
+                 <geometry>
+                    <mesh>
+                        <uri>model://workbench/meshes/workbench.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <!-- Visual is just a copy of the collision -->
+            <visual name="workbench_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://workbench/meshes/workbench.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+        </link>
+    </model>
+</sdf>
