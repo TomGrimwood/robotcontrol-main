@@ -7,6 +7,9 @@
 *.o
 *.obj
 
+# VS Code folders
+.vscode/
+
 # Precompiled Headers
 *.gch
 *.pch
@@ -26,7 +29,44 @@
 *.a
 *.lib
 
+# Linker output
+*.ilk
+*.map
+*.exp
+
 # Executables
 *.exe
 *.out
 *.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# builds
+ur5e_mir_ws/build
+ur5e_workstation_ws/build
+
+# devel
+ur5e_mir_ws/devel
+ur5e_workstation_ws/devel
+
+ur5e_mir_ws/.catkin_workspace
+ur5e_workstation_ws/.catkin_workspace
+
+ur5e_mir_ws/src/CMakeLists.txt
+ur5e_workstation_ws/src/CMakeLists.txt
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf

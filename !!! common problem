@@ -1,6 +1,0 @@
-1. unknown marco "azure kinect"
-
-  replace the offical azure kinect dk ros package Urdf file with the upload one.
-  from commit https://github.com/uoa-iai/robotcontrol/commit/abf0efcf82505e9aedc9fb12a0cb3b549d0021ea
-
-2. 
